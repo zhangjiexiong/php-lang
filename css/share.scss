@@ -1,0 +1,47 @@
+@charset 'UTF-8';
+@import './sassCOnfig.scss';
+
+.bshare-custom{
+    position:absolute;
+    top:177px;
+    left:15px;
+}
+#bshare{
+    .txt{
+        color:$text-gray;
+        display:block;
+        text-align:center;
+        font-size:12px;
+        margin-bottom:4px;
+    }
+    &.bshare-custom{
+        a{
+            display:block;
+            width:45px;
+            height:45px;
+            margin-bottom:2px;
+            padding-left:0;
+            background-image: url(../images/icon-share-newsDetailed.png);
+            background-repeat: no-repeat;
+            background-color: #f1f1f1;
+            &.bshare-more-icon{
+                padding-left:0 !important;
+            }
+            &.bshare-sinaminiblog{
+                background-position: 0 0;
+            }
+            &.bshare-weixin{
+                background-position: 0 -45px;
+            }
+            &.bshare-qzone{
+                background-position: 0 -90px;
+            }
+            &.bshare-qqmb{
+                background-position: 0 -135px;
+            }
+            &.bshare-more{
+                background-position: 0 -180px;
+            }
+        }
+    }
+}
